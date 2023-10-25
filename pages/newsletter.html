@@ -3,9 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="./newsletter.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Newsletter</title>
 </head>
 <body>
+
+<nav class="socialsBanner">
+  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-twitter"></a>
+  <a href="#" class="fa fa-instagram"></a>
+  <a href="#" class="fa fa-linkedin"></a>
+</nav>
+    
+<div class="topBanner">
+  <div class="leftSideTopBanner">
+    <h1 class="logo">Thibault's travel blog</h1>
+    <p class="slogan">Your vicarious vacationing homepage</p>
+  </div>
+  <div class="rightSideTopBanner">
+    <a href="../index.html">Home</a>
+    <a href="./destinations.html">Destinations</a>
+    <a href="./newsletter.html">Newsletter</a>
+  </div>
+</div>
+
+<main>
+
+  
+  <section class="previousNewsletter">
+    <h1>Travel Tales with Thibault</h1>
+    <h2>🌎 Destination Spotlight: Argentina 🌞</h2>
+    <article>
+      Greetings, wanderlust enthusiasts!
+      I'm thrilled to announce that next month, I'm embarking on an unforgettable journey to the mesmerizing land of tango, Argentina! 🇦🇷
+      Argentina is a country that has long been on my travel wish list. From the bustling streets of Buenos Aires to the rugged landscapes of Patagonia, this diverse nation promises a whirlwind of experiences.<br><br> I'll be immersing myself in the rich culture, savoring mouthwatering empanadas, and, of course, learning to dance the passionate tango.
+      But my adventure doesn't stop there. I'll be exploring the awe-inspiring Iguazu Falls, sampling world-class Malbec wines in Mendoza, and visiting the southernmost city in the world, Ushuaia, in Tierra del Fuego.
+      Stay tuned for my upcoming posts, where I'll share my travel tips, stunning photographs, and memorable encounters throughout this journey. Join me in discovering the magic of Argentina!
+      Until then, keep exploring and dreaming big.
+    </article>
+  </section>
+
+  <section class="signUpFormSection">
+    <h2>Sign up for the newsletter below!</h2>
+    <p class="disclaimer">I don't particularly need all the info below. It's just for practice.</p>
+    <form class="signUpForm" action="get">
+      
+      <div class="formWrapper">
+            <div class="nameForm">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first-name">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last-name">
+            </div>
+
+            <div class="emailPhone">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="user-email">
+              <label for="phone-number">Phone Number</label>
+              <input type="tel" id="phone" name="phone-number">
+            </div>
+
+            <div class="password">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password">
+              <label for="confirm-password">Confirm Password</label>
+              <input type="password" id="confirm-password" name="confirm-password">
+            </div>
+      </div>
+
+      <div class="terms">
+        <input id="T&C" type="checkbox" value="Do you agree to the terms and conditions?">
+        <label for="T&C">I agree to the terms and conditions</label>
+      </div>
+
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+
+</main>
   
 </body>
 </html>
