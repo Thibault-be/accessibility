@@ -38,6 +38,10 @@
 body{
   display: flex;
   flex-direction: column;
+
+  background-image: url("./img/background.jpg");
+  background-size: 75% 100%;
+  background-repeat: no-repeat;
 }
 
 
@@ -47,49 +51,45 @@ body{
   height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 
-  background-image: url("./img/background.jpg");
+  /* background-image: url("./img/background.jpg");
   background-size: 75% 100%;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 .socialsBanner{
-  /* border: 2px solid black; */
   background-color: #2d0375;
   padding: 2px 0px;
 }
 
 .topBanner{
   width: 80vw;
+  max-height: 20vh;
   align-self: flex-end;
   background-color: #f4f4f4;
 
   display: flex;
   justify-content: space-between;
-
-  /* border: 5px solid black; */
 }
 
 .leftSideTopBanner{
-  /* border: 2px solid black; */
-  /* width: 40%; */
-  padding: 0px 20px;
+  padding: 20px 20px 20px 20px ;
   background-color: #d8a42a97;
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  
+  flex-wrap: nowrap;
 }
 
 .logo{
-  font-size: 3rem;
+  font-size: min(3vh, 3rem);
   line-height: 1;
   padding-bottom: 0.5rem;
   /* margin-bottom: 0; */
 }
 
 .slogan{
-  font-size: 1rem;
+  font-size: max(1.8vh, 0.2rem);
 }
 
 .leftSideTopBanner p{
@@ -98,18 +98,29 @@ body{
 }
 
 .rightSideTopBanner{
-  /* border: 2px solid brown; */
-  padding-right: 200px;
+  padding-right: 100px;
+  padding-left: 10px;
 
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   gap: 10ch;
+  font-size: clamp(19px,3vh, 50px); 
+}
 
-  font-size: 24px; 
+.rightSideTopBanner>a{
+  background:#d8a42a99;
+  padding: 15px;
+  border-radius: 30%;
+  text-decoration: none;
+  color: black;
+}
+
+.rightSideTopBanner>a.link{
+  text-decoration:underline;
 }
 
 .latestStory{
-  /* border: 2px solid red; */
 
   width: 18vw;
   /* height: 20vw; */
@@ -152,7 +163,6 @@ blockquote{
   padding-left: 2ch;
   margin: 2vh;
   
-  
 }
 
 blockquote.quote1{
@@ -171,4 +181,171 @@ blockquote.quote1{
   padding: 1%;
   margin-top: 3vh;
 }
+
+
+@media (min-width: 801px) and (max-width: 1450px){
+
+  .topBanner{
+    width: 80vw;
+    max-height: 20vh;
+    align-self: flex-end;
+    background-color: #f4f4f4;
+  
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .rightSideTopBanner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 1.5rem;
+    /* line-height: 0.1; */
+    padding: 15px;
+    flex-grow: 1;
+  }
+
+  .leftSideTopBanner{
+    padding: 8px;
+    
+  }
+  .logo{
+    padding-top: 7px;
+    font-size: 28px;
+  }
+  .slogan{
+    padding-right: 0px;
+    font-size: 19px;
+  }
+
+  .leftSideTopBanner p{
+    line-height: 1;
+  }
+
+  .latestStory{
+    width: 55vw;
+    background-color: #f4f4f4;
+    padding: 0;
+  }
+
+  .rioStory{
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  blockquote{
+    font-size: 2rem;
+    /* margin: 1vh; */
+  }
+  
+
+  blockquote.quote1{
+    width: 75vw;
+  }
+  
+  .quote2{
+    font-size: 1.8rem;
+    width: 70vw;
+  }
+
+
+
+  .description{
+    width: 62vw;
+    font-size: 22px;
+  }
+
+}
+
+@media (max-width: 800px){
+
+
+  body{
+    display: flex;
+    flex-direction: column;
+  
+    background-image: url("./img/background.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  .topBanner{
+    width: 95vw;
+  }
+
+  .leftSideTopBanner{
+    width: 35%;
+    padding: 2px;
+  }
+
+  .rightSideTopBanner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 1.2rem;
+    padding: 15px;
+    flex-grow: 1;
+
+  }
+
+  .rightSideTopBanner>a{
+    padding: 0;
+  }
+
+
+  .logo{
+    font-size: 1.1rem;
+    line-height: 1;
+  }
+
+  .slogan{
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  .leftSideTopBanner p{
+    line-height: 1;
+  }
+
+  .latestStory{
+    width: 95vw;
+    background-color: #f4f4f4;
+    font-size: 1rem;
+  }
+
+
+
+  blockquote{
+    font-size: 1.1rem;
+    margin: 1vh;
+  }
+  
+
+  blockquote.quote1{
+    width: 75vw;
+  }
+  
+  .quote2{
+    /* font-size: 1.5rem; */
+    width: 70vw;
+  }
+
+  .description{
+    width: 100vw;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-self:center;
+    font-size: 1rem;
+  }
+
+
+}
+
 
