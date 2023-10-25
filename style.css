@@ -29,3 +29,124 @@
   background: purple;
   color: white;
 }
+
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+
+  background-image: url("./img/background.jpg");
+  background-size: 75% 100%;
+  background-repeat: no-repeat;
+  
+}
+
+.socialsBanner{
+  /* border: 2px solid black; */
+  background-color: #2d0375;
+}
+
+
+.topBanner{
+  /* border: 2px solid blue; */
+
+  width: 80vw;
+  align-self: flex-end;
+
+  background-color: #f4f4f4;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftSideTopBanner{
+  /* border: 2px solid black; */
+  padding: 0px 20px;
+  background-color: #d8a42a97;
+  display: flex;
+  flex-direction: column;
+}
+
+h1.logo{
+  font-size: 3rem;
+  line-height: 0.5;
+  margin-bottom: 0;
+}
+
+.leftSideTopBanner p{
+  color: #534a4a;
+  line-height: 0.1;
+}
+
+.rightSideTopBanner{
+  /* border: 2px solid brown; */
+  padding-right: 200px;
+
+  display: flex;
+  align-items: center;
+  gap: 10ch;
+
+  font-size: 24px; 
+}
+
+.latestStory{
+  /* border: 2px solid red; */
+
+  /* padding-right: 5vw; */
+  
+  width: 18vw;
+  align-self: flex-end;
+  padding-right: 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  overflow: hidden;
+
+}
+
+.jesusImage{
+ width: 100%;
+ padding-right:2vw;
+}
+
+.redeemer{
+  height: auto;
+  width: 100%;
+}
+
+blockquote{
+  background-color: #f4f4f4;
+  width: 80vw;
+}
+
+
+
+.bottomHalf{
+  border: 2px solid green;
+
+  display: flex;
+}
+
+.sahara{
+  display:flex;
+
+  border: 2px solid black;
+}
+
+.norseFjord{
+  border: 2px solid grey;
+}
+
+.lochNess{
+  border: 2px solid indigo;
+}
+
+.northernLight{
+  border: 2px solid darkkhaki;
+}
