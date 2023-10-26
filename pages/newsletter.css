@@ -2,6 +2,9 @@
 body{
   background: url("../img/newsletterBackground.jpg");
   background-size: 120%;
+  background-position: left center;
+
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -12,8 +15,6 @@ main{
   align-items: center;
   width: 70%;
   gap: 50px;
-
-
 }
 
 .previousNewsletter{
@@ -21,12 +22,12 @@ main{
   flex-direction: column;
   align-items: center;
   width: 70%;
+  margin-top: 3vh;
 
   background-color: #f4f4f499;
   
 
   padding: 0 20px 25px 20px;
-  border-bottom: 2px solid black;
 
 }
 
@@ -72,7 +73,7 @@ article{
 .formWrapper{
   display: flex;
   flex-direction:column;
-  gap: 20px;
+  gap: 10px;
   justify-content: space-around;
   width: 100%;
   font-size: 1.4rem;
@@ -80,13 +81,9 @@ article{
 
 .nameForm, .emailPhone, .password{
   display:flex;
+  flex-direction: row;
   justify-content: space-around;
 }
-
-label{
-  width: 20%;
-}
-
 
 .terms{
   font-size: 1.5rem; 
@@ -103,4 +100,125 @@ button[type="submit"]{
   margin-bottom: 30px;
 }
 
+label{
+  width: 200px;
+}
 
+
+@media (min-width: 801px) and (max-width: 1450px){
+
+  body{
+    background: url("../img/newsletterBackground.jpg");
+    background-size: cover;
+
+  }
+  
+  main{
+    width: 90%;
+  }
+  
+  .previousNewsletter, .signUpFormSection{
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 800px){
+
+  body{
+    background: url("../img/newsletterBackground.jpg");
+    background-size: cover;
+
+  }
+
+  main{
+    width: 98%;
+  }
+
+
+  .previousNewsletter, .signUpFormSection{
+    width: 100%;
+  }
+
+  h1{
+    font-size: 24px;
+  }
+
+  h2{
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  article{
+    font-size: 19px;
+  }
+
+  .formWrapper{
+    display: flex;
+    flex-direction:column;
+    gap: 0px;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  input[type="email"],
+  input[type="text"],
+  input[type="tel"],
+  input[type="password"] {
+    width: 200px;
+    margin-bottom: 10px;
+  }
+
+  .nameForm, .emailPhone, .password{
+    display:flex;
+    flex-direction: column;
+  }
+
+  button[type="submit"]{
+    font-size: 1.3rem;
+    padding: 12px;
+    width: 35%;
+    border-radius: 20%;
+    background-color: orange;
+    margin-bottom: 30px;
+    align-self: center;
+  }
+
+
+  .terms{
+    font-size: 1rem; 
+    margin: 35px;
+    align-self: flex-start;
+  }
+}
+/* 
+}
+
+
+}
+
+
+
+
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-left: 50px;
+}
+
+label{
+  width: 50%;
+}
+
+
+
+
+
+
+input[type="email"],
+input[type="text"],
+input[type="tel"],
+input[type="password"] {
+  width: 200px;
+  margin-bottom: 10px;
+} */

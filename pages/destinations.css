@@ -1,7 +1,12 @@
 body{
 
-  background: rgb(97,13,148);
-  background: linear-gradient(90deg, rgba(97,13,148,1) 0%, rgba(255,255,255,1) 50%, rgba(255,0,0,1) 100%); 
+  /* background: rgb(97,13,148);
+  background: linear-gradient(90deg, rgba(97,13,148,1) 0%, rgba(255,255,255,1) 50%, rgba(255,0,0,1) 100%);  */
+
+  background-image: url("../img/destinations.jpg");
+  background-size: cover;
+
+  font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -29,6 +34,7 @@ main{
 
   width: 80%;
 
+
  
 }
 
@@ -40,17 +46,21 @@ main{
   border: 1px solid gray;
   margin: 25px 0px;
   padding-bottom: 15px;
+
+
 }
 
 h2.place{
   font-size: 2.7rem;
   margin-top: 15px;
+  background: #f4f4f499;
 }
 
 .info{
   font-size: 1.5rem;
   line-height: 1.8rem;
   padding: 15px;
+  background: #f4f4f499;
 }
 
 .pictureRow{
@@ -64,7 +74,7 @@ img.topRowPic{
 }
 
 .textContainer{
-  width: 65%
+  width: 85%
 }
 
 .bannerPic{
@@ -76,4 +86,25 @@ img.topRowPic{
 .bannerPic>img{
   width: 100%;
   max-height: 100%
+}
+
+
+@media (max-width: 800px){
+
+
+  .allDestinations{
+    font-size: 22px;
+
+  }
+
+  .textContainer{
+
+    width: 100%;
+    font-size: 19px;
+    
+  }
+
+  .info{
+    font-size: 19px;
+  }
 }
